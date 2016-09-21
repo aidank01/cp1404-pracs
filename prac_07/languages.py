@@ -1,4 +1,3 @@
-"""mooo"""
 
 from prac_07.programming_language import ProgrammingLanguage
 
@@ -6,26 +5,26 @@ def main():
 
     ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
     ruby.name()
-    ruby.is_dynamic()
-    ruby.is_reflection()
+    ruby.dynamic()
+    ruby.reflection()
     ruby.year()
     print("mooo", ruby.name)
 
 
     python = ProgrammingLanguage("Python", "Dynamic", True, 1991)
     python.name
-    python.is_dynamic
-    python.is_reflection
+    python.dynamic
+    python.reflection
     python.year()
-    print()
+    print('python 2nd last print')
 
 
     vb = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
     vb.name
-    vb.is_dynamic
-    vb.is_reflection
+    vb.dynamic
+    vb.reflection
     vb.year()
-    print()
+    print('vb last print')
 
 
 
