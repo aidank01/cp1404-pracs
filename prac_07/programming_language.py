@@ -1,17 +1,13 @@
 
 
 class ProgrammingLanguage:
-    def __init__(self, name):
+    def __init__(self, name = "", typing = "", reflection = False, year = 0):
         self.name = name
-        self.dynamic()      #add boolean test to this
-        self.reflection()   #add boolean test to this
-        self.year = ()      #
+        self.typing = typing
+        self.reflection = reflection
+        self.year = year
 
-    def isDynamic(self,dynamic):
-        self.dynamic()  #add boolean test to this
+    def __str__(self):
+        """ defines output string for each language"""
+        return "{}, {} Typing, Reflection={}, First appeared in {}".format(self.name, self.typing, self.reflection, self.year)
 
-    def isReflection(self,reflection):
-        self.reflection()   #add boolean test to this
-
-    def year(self,year):
-        self.year()

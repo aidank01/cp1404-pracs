@@ -31,6 +31,3 @@ class Car:
     def __str__(self):
         """ defines output string for each car"""
         return "{} , Fuel = {}, Odometer = {} ".format(self.name, self.fuel, self.odometer)
-
-    #def name(self):
-
