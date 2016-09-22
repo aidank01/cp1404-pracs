@@ -12,7 +12,6 @@ def main():
     print("fuel =", bus.fuel)
     print("odo =", bus.odometer)
     print(bus)
-    print(str(bus))
 
     print("{}, {}".format(bus.fuel, bus.odometer))
     print("{self.fuel}, {self.odometer}".format(self=bus))
@@ -22,7 +21,6 @@ def main():
     print("fuel =", limo.fuel)
     limo.drive(115)
     print("odo =", limo.odometer)
-
     print(limo)
 
 main()
