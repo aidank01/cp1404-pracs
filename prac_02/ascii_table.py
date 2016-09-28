@@ -1,21 +1,26 @@
 """Recoding into a loop with initial condition set to false. Once condition is true (though entering the appropriate inputs), program will end"""
 
-exit_condition = False
+def get_number():
 
-while exit_condition != True:
-    try:
+    exit_condition = False
 
-        character = input("Enter a character: ")
-        if character < 'A' or character > 'z':
-            print("Error: please enter a capital or lowercase character between A and Z")
-        else:
-            print("The ASCII code for " + str(character) + " is " + str(ord(character)))
+    while exit_condition != True:
+        try:
 
-        number = int(input("Enter a number between 33 and 127: "))
-        if number < 33 or number > 127:
-            print("Error: Please enter a number from 33 to 127")
-            print("The character for " + str(number) + " is " + str((chr(number))))
-    except ValueError:
-        print("Error: Please enter a number from 33 to 127")
+            # character = input("Enter a character: ")
+            # if character < 'A' or character > 'z':
+            #     print("Error: please enter a capital or lowercase character between A and Z")
+            # else:
+            #     print("The ASCII code for " + str(character) + " is " + str(ord(character)))
 
-"""fix errors with not remaining on first question until completed"""
+            number = int(input("Enter a number (10-50): "))
+            if number < 10 or number > 50:
+                print("Error: Please enter a valid number!")
+            else:
+                print("The character for " + str(number) + " is " + str((chr(number))))
+        except ValueError:
+            print("Error: Please enter a valid number!")
+
+get_number()
+
+
