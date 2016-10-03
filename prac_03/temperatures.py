@@ -14,6 +14,7 @@ def main():
             fahrenheit_to_celcius()
 
         print(MENU)
+        choice = input(">>> ").upper()
 
 # print("Thank you.")
 
