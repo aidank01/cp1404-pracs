@@ -22,6 +22,9 @@ for filename in os.listdir('.'):
     if not os.path.isdir(filename):
         new_name = filename.replace(" ", "_").replace(".TXT", ".txt")
         print(new_name)
+        temp_name = ''
+        for i, char in enumerate(filename):
+
 
         # Option 1: rename file to new name - in place
     os.rename(filename, new_name)
